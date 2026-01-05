@@ -1,16 +1,36 @@
-# React + Vite
+# Job Application Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend-focused job application tracking system built with React that helps users organize and monitor their job applications using a Kanban-style board.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+https://uday-jobboard.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Overview
+This project allows users to track job applications across different stages such as **Applied**, **Interviewed**, **Accepted**, and **Rejected** using an intuitive drag-and-drop interface. It also includes an analytics dashboard to visualize application trends.
 
-## React Compiler
+## ✨ Features
+- Kanban-style job board with drag-and-drop functionality
+- Status-based columns for application tracking
+- Job details view with complete application information
+- Analytics dashboard (role vs status, top applied roles, applications per day)
+- Environment-based API configuration for local and production use
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
+- **Frontend:** React (Vite), JavaScript, HTML, CSS
+- **Drag & Drop:** dnd-kit
+- **Charts:** Chart.js
+- **Backend (Mock API):** JSON Server
+- **Deployment:** Netlify (Frontend), Render (Backend)
 
-## Expanding the ESLint configuration
+## 🧠 Development Notes
+- This project was built as part of hands-on frontend learning and experimentation.
+- AI-assisted development tools (such as GPT-based systems) were used to accelerate prototyping, explore solution approaches, and assist with debugging, while all core logic, validations, and final implementations were reviewed and understood manually.
+- Focused on clean UI, API integration, and practical problem-solving.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## ⚙️ Setup & Run Locally
+```bash
+git clone https://github.com/UDAYSUBRAMANYAM/jobtracker.git
+cd frontend
+npm install
+npm run dev
