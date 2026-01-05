@@ -1,0 +1,49 @@
+.column {
+  flex: 1;
+  padding: 12px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* STATUS BACKGROUNDS */
+.applied {
+  background: linear-gradient(180deg, #facc15, #eab308);
+}
+
+.interviewed {
+  background: linear-gradient(180deg, #fb923c, #f97316);
+}
+
+.accepted {
+  background: linear-gradient(180deg, #4ade80, #22c55e);
+}
+
+.rejected {
+  background: linear-gradient(180deg, #f87171, #ef4444);
+}
+
+.deleted {
+  background: #000;
+}
+
+/* cards container */
+.column-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.drop-indicator {
+  height: 50px;
+  border: 2px dashed white;
+  border-radius: 10px;
+  opacity: 0.8;
+}

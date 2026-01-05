@@ -1,0 +1,76 @@
+.create-job-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2,
+    #89f7fe
+  );
+}
+
+.create-job-card {
+  width: 420px;
+  padding: 35px;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-job-card h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.create-job-card input,
+.create-job-card textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.create-job-card textarea {
+  resize: none;
+  height: 80px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+}
+
+.actions button:last-child {
+  background: linear-gradient(135deg, #d3d3d3, #9e9e9e);
+}
+
+
+.create-job-card select {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}

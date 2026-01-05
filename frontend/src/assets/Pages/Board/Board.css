@@ -1,0 +1,14 @@
+
+.board {
+  min-height: 100vh;
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2,
+    #89f7fe
+  );
+}
