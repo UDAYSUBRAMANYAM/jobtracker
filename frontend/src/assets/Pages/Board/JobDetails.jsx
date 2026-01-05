@@ -2,14 +2,14 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./JobDetails.css";
 
-const API_URL = "http://localhost:3000/jobs";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const JobDetails = () => {
   const { id } = useParams();
   const [job, setJob] = useState(null);
 
   useEffect(() => {
-    fetch(`${API_URL}/${id}`)
+    fetch(`${API_URL}/jobs/${id}`)
       .then(res => res.json())
       .then(data => setJob(data))
       .catch(err => console.error(err));

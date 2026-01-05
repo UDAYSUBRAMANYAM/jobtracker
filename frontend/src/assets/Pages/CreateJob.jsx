@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "./CreateJob.css"
 
-const API_URL = "http://localhost:3000/jobs"
+const API_URL = import.meta.env.VITE_API_URL;
 
 const CreateJob = () => {
   const navigate = useNavigate()
@@ -28,7 +28,7 @@ const CreateJob = () => {
     }
 
     try {
-      await fetch(API_URL, {
+      await fetch(`${API_URL}/jobs`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

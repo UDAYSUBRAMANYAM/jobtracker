@@ -23,14 +23,14 @@ ChartJS.register(
   Legend
 );
 
-const API_URL = "http://localhost:3000/jobs";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const Analytics = () => {
   const navigate = useNavigate();
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    fetch(API_URL)
+    fetch(`${API_URL}/jobs`)
       .then(res => res.json())
       .then(data => setJobs(data));
   }, []);

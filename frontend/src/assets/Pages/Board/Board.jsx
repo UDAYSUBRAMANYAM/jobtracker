@@ -1,21 +1,22 @@
+// Board.jsx
 import { useEffect, useState } from "react";
 import { DndContext } from "@dnd-kit/core";
 import Column from "./Column";
 import "./Board.css";
 
-const API_URL = "http://localhost:3000/jobs";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const Board = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    fetch(API_URL)
+    fetch(`${API_URL}/jobs`)
       .then(res => res.json())
       .then(data => setJobs(data));
   }, []);
 
   const updateStatus = async (id, newStatus) => {
-    await fetch(`${API_URL}/${id}`, {
+    await fetch(`${API_URL}/jobs/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ status: newStatus })
